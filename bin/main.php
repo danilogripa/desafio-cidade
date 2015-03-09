@@ -27,3 +27,5 @@ foreach ($suggestions as $suggestion){
         }
     }
 }
+
+echo " -- FIM DE EXECUÇÃO DO SCRIPT -- ";
