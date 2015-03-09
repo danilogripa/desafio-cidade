@@ -6,84 +6,113 @@
  * Time: 23:16
  */
 
-
-
 class Validation {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    public function yahoo_spell_check ($query)
-{
-// Substitute this application ID with your own application ID provided by Yahoo!.
-    $appID = "w2SMyX7e";
-    $request = "http://search.yahooapis.com/WebSearchService/V1/spellingSuggestion?appid=".$appID."&query=".urlencode($query);
-    $session = curl_init($request);
-    curl_setopt($session, CURLOPT_HEADER, true);
-    curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($session);
-    curl_close($session);
-
-    if (!($xml = strstr($response, '<?xml'))) {
-        $xml = null;
+    /**
+     * @param $suggestion
+     * @param $city
+     * @return bool
+     */
+    protected function equalsTo($city, $suggestion){
+        $suggestion = $this->clearWord($suggestion);
+        $city = $this->clearWord($city);
+        if($suggestion == $city){
+            return true;
+        }else{
+            return false;
+        }
     }
-
-    $simple_xml = simplexml_load_string($xml);
-    $data = $simple_xml->Result;
-    return $data;
-}
-
 
     /**
-     * @param $query
-     * @return string
+     * @param $city
+     * @param $suggestion
+     * @return bool
      */
-    public function google_spell_check($query) {
-    // The request also includes the userip parameter which provides the end
-    // user's IP address. Doing so will help distinguish this legitimate
-    // server-side traffic from traffic which doesn't come from an end-user.
-        $url = "https://ajax.googleapis.com/ajax/services/search/web?v=1.0&"
-            . "q=" . urlencode($query) . "&userip=186.203.245.246";
+    protected function groupOfLetter($city, $suggestion){
 
-        echo $url;
-// sendRequest
-// note how referer is set manually
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_REFERER, "http://danilogripa.com");
-        $body = curl_exec($ch);
-        curl_close($ch);
+        $stringParts = str_split($suggestion);
+        sort($stringParts);
+        $suggestion = implode('', $stringParts);
 
-// now, process the JSON string
-        $json = json_decode($body);
-        return $json;
+        $stringParts1 = str_split($city);
+        sort($stringParts1);
+        $city = implode('', $stringParts1);
+
+        $suggestion = $this->clearWord($suggestion);
+        $city = $this->clearWord($city);
+
+        if($suggestion == $city){
+            return true;
+        }else{
+            return false;
+        }
     }
 
+    /**
+     * @param $suggestion
+     * @param $city
+     * @return bool
+     */
+    protected function removingLetters($city, $suggestion){
 
+        $suggestion = strtr(substr($suggestion, 0, -2), "-", "");
+
+        $suggestion = $this->clearWord($suggestion);
+        $city = $this->clearWord($city);
+
+        if($suggestion == $city){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    /**
+     * @param $word
+     * @return string
+     */
+    protected function clearWord($word){
+        $word = strtr($word, "áàãâéêíóôõúüçÁÀÃÂÉÊÍÓÔÕÚÜÇ", "aaaaeeiooouucAAAAEEIOOOUUC");
+        $word = strtolower(trim($word));
+        return $word;
+    }
+
+    /**
+     * @param array $suggestion
+     * @param array $cities
+     * @return array
+     */
+    public function run(array $suggestion, array $cities) {
+        $resultCity["ID"] = null;
+        $resultCity["name"] = null;
+        $resultCity["acronym"] = null;
+        foreach ($cities as $city){
+
+            $validation1 = $this->equalsTo($city["name"], $suggestion["name"]);
+            $validation2 = $this->groupOfLetter($city["name"], $suggestion["name"]);
+            $validation3 = $this->removingLetters($city["name"], $suggestion["name"]);
+            /* Se eu tivesse mais tempo poderia criar muitas outras validações*/
+
+            if($validation1 == true || $validation2 == true || $validation3 == true){
+                $resultCity["ID"] = $city["ID"];
+                $resultCity["name"] = $city["name"];
+                $resultCity["acronym"] = $city["acronym"];
+                break;
+            }
+        }
+
+        if($resultCity["ID"] != null){
+            return $result = [
+                $suggestion["ID"],      // suggestionId
+                $suggestion["name"],    // suggestionName
+                $resultCity["ID"],      // officialId
+                $resultCity["name"],    // officialName
+                $resultCity["acronym"]  // officialAcronym
+            ];
+
+        }else{
+            return false;
+        }
+
+    }
 }

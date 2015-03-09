@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f10b7a37-3eed-4e0e-beab-38faf458adde" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/queries.php" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\desafio-cidade\config\parameter.php" afterPath="" />
-    </list>
-    <list id="55ae9104-c5f0-41f2-b141-923402695ca7" name="Failed commit: Default" comment="Connection to database _ OK - queries _ OK - insert new result _ OK">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Danilo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/parameters.php.dist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Conn.php" afterPath="$PROJECT_DIR$/src/Conn.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Validation.php" afterPath="$PROJECT_DIR$/src/Validation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/main.php" afterPath="$PROJECT_DIR$/bin/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
+    <list id="55ae9104-c5f0-41f2-b141-923402695ca7" name="Failed commit: Default" comment="Connection to database _ OK - queries _ OK - insert new result _ OK" />
     <ignored path="desafio-cidade.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -40,13 +36,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Conn.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Conn.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Conn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6754967" vertical-offset="918" max-vertical-offset="2431">
-              <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+            <state vertical-scroll-proportion="-14.0" vertical-offset="10" max-vertical-offset="476">
+              <caret line="135" column="1" selection-start-line="135" selection-start-column="1" selection-end-line="135" selection-end-column="1" />
               <folding>
-                <element signature="e#6#88#0#PHP" expanded="true" />
+                <element signature="e#127#162#0#PHP" expanded="false" />
+                <element signature="n#connect#0;n#Conn#0;n#!!top" expanded="false" />
+                <element signature="e#538#567#0#PHP" expanded="false" />
+                <element signature="n#close#0;n#Conn#0;n#!!top" expanded="false" />
+                <element signature="e#644#727#0#PHP" expanded="false" />
+                <element signature="n#getAsArray#0;n#Conn#0;n#!!top" expanded="false" />
+                <element signature="e#1191#1243#0#PHP" expanded="false" />
+                <element signature="n#insertNewResult#0;n#Conn#0;n#!!top" expanded="false" />
+                <element signature="e#1539#1670#0#PHP" expanded="false" />
+                <element signature="n#mysqli_prepared_query#0;n#Conn#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -55,16 +60,19 @@
       <file leaf-file-name="queries.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/queries.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="357">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="340">
+              <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
-                <marker date="1425442394165" expanded="true" signature="116:142" placeholder="SELECT * FRO..geodata_city..." />
-                <marker date="1425442394165" expanded="true" signature="167:204" placeholder="SELECT * FRO..geodata_city_suggestion..." />
-                <marker date="1425442394165" expanded="true" signature="225:253" placeholder="SELECT * FRO..geodata_region..." />
-                <marker date="1425442394165" expanded="true" signature="283:392" placeholder="SELECT c.*, ..geodata_city..." />
-                <marker date="1425442394165" expanded="true" signature="421:582" placeholder="INSERT INTO ..." />
-                <marker date="1425442394165" expanded="true" signature="421:587" placeholder="INSERT INTO ..." />
+                <marker date="1425865730102" expanded="true" signature="116:142" placeholder="SELECT * FRO..geodata_city..." />
+                <marker date="1425865730102" expanded="true" signature="116:156" placeholder="SELECT * FRO..geodata_city..." />
+                <marker date="1425865730102" expanded="true" signature="181:218" placeholder="SELECT * FRO..geodata_city_suggestion..." />
+                <marker date="1425865730102" expanded="true" signature="181:232" placeholder="SELECT * FRO..geodata_city_suggestion..." />
+                <marker date="1425865730102" expanded="true" signature="253:281" placeholder="SELECT * FRO..geodata_region..." />
+                <marker date="1425865730102" expanded="true" signature="253:295" placeholder="SELECT * FRO..geodata_region..." />
+                <marker date="1425865730102" expanded="true" signature="325:434" placeholder="SELECT c.*, ..geodata_city..." />
+                <marker date="1425865730102" expanded="true" signature="463:624" placeholder="INSERT INTO ..." />
+                <marker date="1425865730102" expanded="true" signature="463:628" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -85,10 +93,30 @@
       <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.730769" vertical-offset="17" max-vertical-offset="544">
-              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+            <state vertical-scroll-proportion="-2.8846154" vertical-offset="129" max-vertical-offset="595">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Validation.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Validation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.53348213" vertical-offset="256" max-vertical-offset="969">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding>
+                <element signature="e#114#191#0#PHP" expanded="false" />
+                <element signature="n#equalsTo#0;n#Validation#0;n#!!top" expanded="false" />
+                <element signature="e#460#537#0#PHP" expanded="false" />
+                <element signature="n#groupOfLetter#0;n#Validation#0;n#!!top" expanded="false" />
+                <element signature="e#1054#1131#0#PHP" expanded="false" />
+                <element signature="n#removingLetters#0;n#Validation#0;n#!!top" expanded="false" />
+                <element signature="e#1476#1529#0#PHP" expanded="false" />
+                <element signature="n#clearWord#0;n#Validation#0;n#!!top" expanded="false" />
+                <element signature="e#1735#1827#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -104,12 +132,12 @@
       <list>
         <option value="$PROJECT_DIR$/config/parameter.php" />
         <option value="$PROJECT_DIR$/config/parameter.php.dist" />
-        <option value="$PROJECT_DIR$/src/Validation.php" />
         <option value="$PROJECT_DIR$/src/ConnHandler.php" />
         <option value="$PROJECT_DIR$/src/Queries.php" />
         <option value="$PROJECT_DIR$/config/queries.php" />
-        <option value="$PROJECT_DIR$/bin/main.php" />
         <option value="$PROJECT_DIR$/src/Conn.php" />
+        <option value="$PROJECT_DIR$/src/Validation.php" />
+        <option value="$PROJECT_DIR$/bin/main.php" />
       </list>
     </option>
   </component>
@@ -146,7 +174,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -165,36 +192,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desafio-cidade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desafio-cidade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desafio-cidade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desafio-cidade" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,6 +230,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -237,9 +240,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="false" name="script" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/bin/main.php">
@@ -275,26 +275,26 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32795697" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30107528" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3252688" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30107528" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23200513" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23521851" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994187" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293011" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -323,10 +323,77 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Conn.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2431">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#127#162#0#PHP" expanded="false" />
+            <element signature="n#connect#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#538#567#0#PHP" expanded="false" />
+            <element signature="n#close#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#644#727#0#PHP" expanded="false" />
+            <element signature="n#getAsArray#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#1191#1243#0#PHP" expanded="false" />
+            <element signature="n#insertNewResult#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#1539#1670#0#PHP" expanded="false" />
+            <element signature="n#mysqli_prepared_query#0;n#Conn#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/queries.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="357">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+            <marker date="1425865730102" expanded="true" signature="116:142" placeholder="SELECT * FRO..geodata_city..." />
+            <marker date="1425865730102" expanded="true" signature="116:156" placeholder="SELECT * FRO..geodata_city..." />
+            <marker date="1425865730102" expanded="true" signature="181:218" placeholder="SELECT * FRO..geodata_city_suggestion..." />
+            <marker date="1425865730102" expanded="true" signature="181:232" placeholder="SELECT * FRO..geodata_city_suggestion..." />
+            <marker date="1425865730102" expanded="true" signature="253:281" placeholder="SELECT * FRO..geodata_region..." />
+            <marker date="1425865730102" expanded="true" signature="253:295" placeholder="SELECT * FRO..geodata_region..." />
+            <marker date="1425865730102" expanded="true" signature="325:434" placeholder="SELECT c.*, ..geodata_city..." />
+            <marker date="1425865730102" expanded="true" signature="463:624" placeholder="INSERT INTO ..." />
+            <marker date="1425865730102" expanded="true" signature="463:628" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/parameters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="391">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="544">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conn.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
+            <element signature="e#127#162#0#PHP" expanded="false" />
+            <element signature="n#connect#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#538#567#0#PHP" expanded="false" />
+            <element signature="n#close#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#644#727#0#PHP" expanded="false" />
+            <element signature="n#getAsArray#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#1191#1243#0#PHP" expanded="false" />
+            <element signature="n#insertNewResult#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#1539#1670#0#PHP" expanded="false" />
+            <element signature="n#mysqli_prepared_query#0;n#Conn#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -335,7 +402,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#114#191#0#PHP" expanded="false" />
+            <element signature="n#equalsTo#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#460#537#0#PHP" expanded="false" />
+            <element signature="n#groupOfLetter#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#1054#1131#0#PHP" expanded="false" />
+            <element signature="n#removingLetters#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#1476#1529#0#PHP" expanded="false" />
+            <element signature="n#clearWord#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#1735#1827#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -354,7 +431,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
+            <element signature="e#127#162#0#PHP" expanded="false" />
+            <element signature="n#connect#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#538#567#0#PHP" expanded="false" />
+            <element signature="n#close#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#644#727#0#PHP" expanded="false" />
+            <element signature="n#getAsArray#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#1191#1243#0#PHP" expanded="false" />
+            <element signature="n#insertNewResult#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#1539#1670#0#PHP" expanded="false" />
+            <element signature="n#mysqli_prepared_query#0;n#Conn#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -363,7 +449,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#114#191#0#PHP" expanded="false" />
+            <element signature="n#equalsTo#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#460#537#0#PHP" expanded="false" />
+            <element signature="n#groupOfLetter#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#1054#1131#0#PHP" expanded="false" />
+            <element signature="n#removingLetters#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#1476#1529#0#PHP" expanded="false" />
+            <element signature="n#clearWord#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#1735#1827#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -382,7 +478,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
+            <element signature="e#127#162#0#PHP" expanded="false" />
+            <element signature="n#connect#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#538#567#0#PHP" expanded="false" />
+            <element signature="n#close#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#644#727#0#PHP" expanded="false" />
+            <element signature="n#getAsArray#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#1191#1243#0#PHP" expanded="false" />
+            <element signature="n#insertNewResult#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#1539#1670#0#PHP" expanded="false" />
+            <element signature="n#mysqli_prepared_query#0;n#Conn#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -391,41 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Validation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10944206" vertical-offset="0" max-vertical-offset="1513">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769" vertical-offset="17" max-vertical-offset="544">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/queries.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="357">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
-            <marker date="1425442394165" expanded="true" signature="116:142" placeholder="SELECT * FRO..geodata_city..." />
-            <marker date="1425442394165" expanded="true" signature="167:204" placeholder="SELECT * FRO..geodata_city_suggestion..." />
-            <marker date="1425442394165" expanded="true" signature="225:253" placeholder="SELECT * FRO..geodata_region..." />
-            <marker date="1425442394165" expanded="true" signature="283:392" placeholder="SELECT c.*, ..geodata_city..." />
-            <marker date="1425442394165" expanded="true" signature="421:582" placeholder="INSERT INTO ..." />
-            <marker date="1425442394165" expanded="true" signature="421:587" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -439,12 +509,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Conn.php">
+    <entry file="file://$PROJECT_DIR$/config/queries.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6754967" vertical-offset="918" max-vertical-offset="2431">
-          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="340">
+          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="true" />
+            <marker date="1425865730102" expanded="true" signature="116:142" placeholder="SELECT * FRO..geodata_city..." />
+            <marker date="1425865730102" expanded="true" signature="116:156" placeholder="SELECT * FRO..geodata_city..." />
+            <marker date="1425865730102" expanded="true" signature="181:218" placeholder="SELECT * FRO..geodata_city_suggestion..." />
+            <marker date="1425865730102" expanded="true" signature="181:232" placeholder="SELECT * FRO..geodata_city_suggestion..." />
+            <marker date="1425865730102" expanded="true" signature="253:281" placeholder="SELECT * FRO..geodata_region..." />
+            <marker date="1425865730102" expanded="true" signature="253:295" placeholder="SELECT * FRO..geodata_region..." />
+            <marker date="1425865730102" expanded="true" signature="325:434" placeholder="SELECT c.*, ..geodata_city..." />
+            <marker date="1425865730102" expanded="true" signature="463:624" placeholder="INSERT INTO ..." />
+            <marker date="1425865730102" expanded="true" signature="463:628" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8846154" vertical-offset="129" max-vertical-offset="595">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Conn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.0" vertical-offset="10" max-vertical-offset="476">
+          <caret line="135" column="1" selection-start-line="135" selection-start-column="1" selection-end-line="135" selection-end-column="1" />
+          <folding>
+            <element signature="e#127#162#0#PHP" expanded="false" />
+            <element signature="n#connect#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#538#567#0#PHP" expanded="false" />
+            <element signature="n#close#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#644#727#0#PHP" expanded="false" />
+            <element signature="n#getAsArray#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#1191#1243#0#PHP" expanded="false" />
+            <element signature="n#insertNewResult#0;n#Conn#0;n#!!top" expanded="false" />
+            <element signature="e#1539#1670#0#PHP" expanded="false" />
+            <element signature="n#mysqli_prepared_query#0;n#Conn#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.53348213" vertical-offset="256" max-vertical-offset="969">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="e#114#191#0#PHP" expanded="false" />
+            <element signature="n#equalsTo#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#460#537#0#PHP" expanded="false" />
+            <element signature="n#groupOfLetter#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#1054#1131#0#PHP" expanded="false" />
+            <element signature="n#removingLetters#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#1476#1529#0#PHP" expanded="false" />
+            <element signature="n#clearWord#0;n#Validation#0;n#!!top" expanded="false" />
+            <element signature="e#1735#1827#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

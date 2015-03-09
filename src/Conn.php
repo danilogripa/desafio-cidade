@@ -6,8 +6,6 @@
  * Time: 23:41
  */
 
-
-
 class Conn {
 
     public $conn;
@@ -32,7 +30,6 @@ class Conn {
         mysqli_close($this->conn);
     }
 
-
     /**
      * @param $query
      * @param null $xtra
@@ -42,7 +39,7 @@ class Conn {
         $link = $this->connect();
         $queries = require __DIR__ . "/../config/queries.php";
         if($xtra != null){
-            $result=mysqli_query($link,$queries[$query].$xtra);
+            $result=mysqli_query($link,$queries[$query] . $xtra . " ORDER BY name");
         }else{
             $result=mysqli_query($link,$queries[$query]);
         }
@@ -135,4 +132,5 @@ class Conn {
             return $result[0];
         }
     }
+
 }

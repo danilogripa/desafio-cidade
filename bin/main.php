@@ -7,20 +7,23 @@
  */
 
 require __DIR__ . "/../src/Conn.php";
+require __DIR__ . "/../src/Validation.php";
 
 $conn = new Conn();
-//var_dump($conn->getAsArray('regions'));
-//var_dump($conn->getAsArray('suggestions'));
-//var_dump($conn->getAsArray('cities'));
-//var_dump($conn->getAsArray('citiesFromRegion', '19'));
-
-$result = [
-    "123",              // suggestionId
-    "adas",             // suggestionName
-    "4325",             // officialId
-    "Rio de Janeiro",   // officialName
-    "RJ"                // officialAcronym
-];
-
-//$conn->insertNewResult($result);
-
+$validation = new Validation();
+$suggestions = $conn->getAsArray('suggestions');
+$x = 1;
+while ($x <= 27){
+    $citiesFromRegion[$x] = $conn->getAsArray('citiesFromRegion', $x);
+    $x++;
+}
+foreach ($suggestions as $suggestion){
+    $regionID = $suggestion["regionID"];
+    $cities = $citiesFromRegion[$regionID];
+    if($cities != null){
+        $result = $validation->run($suggestion, $citiesFromRegion[$regionID]);
+        if($validation != false){
+            $conn->insertNewResult($result);
+        }
+    }
+}
